@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Java Script Assignment</title>
+    <style>
+        div {
+            border: 3px solid gray;
+            background-color: darkgreen;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            width: 15vw;
+            margin: 10vh auto;
+            flex-direction: column;
+        }
+        #start {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #stop {
+            text-align: center;
+            margin: -50px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            height: 5vh;
+            width: 10vw;
+            background-color: gainsboro;
+            border: none;
+            border-radius: 50px;
+        }
+        h2 {
+            text-align: center;
+            margin: -10px auto;
+        }
+        body {
+            background-color: brown;
+        }
+        h1 {
+            text-align: center;
+            margin: 100px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        @media only screen and (max-width: 500px) {
+            div {
+            height: 21vh;
+            width: 45vw;
+            margin: -10vh auto;
+        }
+        #stop {
+            margin: 100px auto;
+            height: 5vh;
+            width: 30vw;
+        }
+        h1 {
+            text-align: center;
+            margin: 200px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>STOP WATCH</h1>
+        <div>
+            <h1  id="start" onclick="counter()">Start</h1>
+        </div>
+           <button id="stop" onclick="stopped()"> <h2>Stop</h2></button>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
